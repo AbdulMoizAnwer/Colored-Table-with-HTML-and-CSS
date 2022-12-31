@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with CSS</title>
+    <style>
+        .Heading1{
+            color: #6b6e72;
+            border: 0px;
+            text-align: left;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid lightgrey;
+            font-family: sans-serif;
+        }
+        .para{
+            color: #6c7874;
+            background-color: #f5f5f5;
+            border: 0px;
+        }
+        .subHeading1{
+            background-color: #666666;
+            color: white;
+            border: 0.05px solid lightgrey;
+            border-right: 0.05px solid white;
+            font-family: tahoma;
+            font-size: small;
+        }
+        .subHeading2{
+            background-color: #666666;
+            color: white;
+            border-left: 0.05px solid white;
+            border: 0.05px solid lightgrey;
+            font-family: tahoma;
+            font-size: small;
+        }
+        .table1{
+            border: 0px;
+            width: 500px;
+            align-items: center;
+        }
+        .table2{
+            width: 500px;
+            border: 2px black;
+        }
+        .tableData1{
+            color: #76737f;
+            background-color: #f7f7f7;
+            padding: 5px;
+            margin: 0px;
+            border-bottom: #666666;
+            border-top: #666666;
+            border-left: 0.05px solid lightgrey;
+            border-right: 0.05px solid lightgrey;
+        }
+        .tableData2{
+            color: #76737f;
+            background-color: #e8e8e8;
+            padding: 5px;
+            margin: 0px;
+            border-bottom: #666666;
+            border-top: #666666;
+            border-left: 0.05px solid lightgrey;
+            border-right: 0.05px solid lightgrey;
+        }
+        .tableCell{
+            border: #f5f5f5;
+            background-color: #f5f5f5;
+            padding: 3px;
+        }
+        .inputBox{
+            border-width: 0.5px;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            width: 200px;
+        }
+        #lastCellBorder{
+            color: #76737f;
+            border-top: 0px;
+            background-color: #e8e8e8;
+            padding: 5px;
+            margin: 2px;
+            border-left: 0.3px solid lightgrey;
+            border-bottom: 0.3px solid lightgrey;
+            border-right: 0.3px solid lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <table class="table1" cellspacing="0px" cellpadding="2px">
+            <tr><th class="tableCell"></th><th class="Heading1" colspan="2">Your Info</th><th class="tableCell"></th></tr>      
+            <tr><td class="tableCell"></td><td class="para" colspan="2">Volunteers under 14 should be accompanied by an adult.</td><td class="tableCell"></td></tr>
+            <table class="table2" cellspacing="0px" cellpadding="2px" border="2px solid black">
+                <tr><th class="tableCell"></th><th class="subHeading1">Info Needed</th><th class="subHeading2">Enter It Here</th><th class="tableCell"></th></tr>
+                <tr><td class="tableCell"></td><td class="tableData1"><label for="">E-Mail Address</label></td><td class="tableData1"><input class="inputBox" type="text"></td><td class="tableCell"></td></tr>
+                <tr><td class="tableCell"></td><td class="tableData2"><label for="">First Name</label></td><td class="tableData2"><input class="inputBox" type="text"></td><td class="tableCell"></td></tr>
+                <tr><td class="tableCell"></td><td class="tableData1"><label for="">Last Name</label></td><td class="tableData1"><input class="inputBox" type="text"></td><td class="tableCell"></td></tr>
+                <tr><td class="tableCell"></td><td class="tableData2"><label for="">Cell Phone</label></td><td class="tableData2"><input class="inputBox" type="number" name="" id="" placeholder="111-111-1111"></td><td class="tableCell"></td></tr>
+                <tr><td class="tableCell"></td><td class="tableData1"><label for="">Shirt Size</label></td><td class="tableData1"><select class="inputBox" name="" id=""><option value=""></option><option value="">fifteen</option><option value="">fifteen and a half</option><option value="">Sixteen</option></select></td><td class="tableCell"></td></tr>
+                <tr><td class="tableCell"></td><td id="lastCellBorder">How did you hear about this race?</td><td id="lastCellBorder"><select class="inputBox" name=""><option value=""></option><option value="">My friend told me about this.</option><option value="">I was visiting someone's website and saw it there.</option></select></td><td class="tableCell"></td></tr>
+                <tr><td class="tableCell"></td><td class="tableCell"></td><td class="tableCell"></td><td class="tableCell"></td></tr>
+            </table>
+</table>
+</body>
+</html>
